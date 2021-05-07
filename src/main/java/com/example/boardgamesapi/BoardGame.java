@@ -10,6 +10,17 @@ public class BoardGame {
     public BoardGame() {
     }
 
+    @Override
+    public String toString() {
+        return "BoardGame{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", playerCount=" + playerCount +
+                ", description='" + description + '\'' +
+                ", rating=" + rating +
+                '}';
+    }
+
     public BoardGame(int id, String name, int playerCount, String description, double rating) {
         this.id = id;
         this.name = name;
